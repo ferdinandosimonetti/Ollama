@@ -1,10 +1,30 @@
-#### Inspired from (https://github.com/imartinez/privateGPT) and (https://github.com/jmorganca/ollama)
+#### Forked from (https://github.com/PromptEngineer48/Ollama), inspired from ((https://github.com/imartinez/privateGPT) and (https://github.com/jmorganca/ollama)
 
-#### Step 1: Step a Virtual Environment
+#### Step 1: Setup a Virtual Environment
+
+Python should be > 3.8
+```
+python3 --version
+python3 -m venv .env
+. .env/bin/activate
+```
+
+#### Upgrade VENV's PIP
+
+```
+python -m pip install --upgrade pip
+```
+
+#### Avoid deprecations when installing requirements
+
+```
+python -m pip install wheel
+```
 
 #### Step 2: Install the Requirements
+
 ```
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 #### Step 3: Pull the models (if you already have models loaded in Ollama, then not required)
